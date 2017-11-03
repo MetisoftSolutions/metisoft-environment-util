@@ -1,0 +1,20 @@
+{
+  "name": "metisoft-environmentUtil",
+  "version": "1.1.0",
+  "description": "Metisoft, LLC - Environment Utilities",
+  "author": "James Brawn, Jr.",
+  "license": "MIT",
+  "private": true,
+  "main": "./src/index.js",
+  "dependencies": {
+    "metisoft-module-exporter": "https://github.com/MetisoftSolutions/metisoft-module-exporter.git"
+  },
+  "scripts": {
+    "genDocs": "jsdoc src/ -p -r --verbose -t node_modules/minami -d doc/jsdoc -c doc/conf.json",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.4.3",
+    "minami": "^1.1.1"
+  }
+}
